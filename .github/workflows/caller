@@ -1,12 +1,14 @@
-name: caller
+name: demo
 
 on:
-  workflow_dispatch:
+ push:
+  branches:
+   - main
+ workflow_dispatch:
 
 jobs:
-  Regression:
-    name: hello
-    runs-on: ubuntu-latest
-    steps:
-      - name: hel
-        runs: echo "hello"
+ job1:
+   runs-on: ubuntu-latest
+   steps:
+    - name: echo
+      run: git --version
