@@ -8,7 +8,7 @@ on:
 
 jobs:
   Regression:
-    uses: https://github.com/Mansi1399/prcatice/blob/Mansi1399-patch-1/.github/workflows/called.yml@Mansi1399-patch-1
+    uses: Mansi1399/prcatice/blob/Mansi1399-patch-1/.github/workflows/called.yml@Mansi1399-patch-1
     with:
       branch_name: develop_demo
       repo_name: core
