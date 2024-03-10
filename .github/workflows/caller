@@ -1,9 +1,6 @@
 name: caller
 
 on:
-  push:
-    branches:
-      - dem
   workflow_dispatch:
 
 jobs:
