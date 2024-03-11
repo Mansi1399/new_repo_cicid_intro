@@ -25,5 +25,5 @@ jobs:
         with:
          script: |
            const id = ${{env.s1}}.split('-')[1]
-      - run: echo "s2=${{id}}" >> GITHUB_ENV
+           echo id
 
