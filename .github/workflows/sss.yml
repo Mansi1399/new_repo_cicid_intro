@@ -31,7 +31,7 @@ jobs:
       - name: Extract substring
         run: |
           original_string="Hello_World"
-          substring=${original_string#*_}
+          substring=$(echo $original_string | cut -d'_' -f2-)
           echo "The substring after '_' is: $substring"
 
 
