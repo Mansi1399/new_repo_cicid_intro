@@ -14,5 +14,8 @@ jobs:
     steps:
       - name: Extract Substring
         id: extract
-        run: echo "::set-output name=s1::hello"
+        run: echo "s1=hello" >> $GITHUB_ENV
+
+      - name: use
+        run: echo "${{env.s1}}"
 
