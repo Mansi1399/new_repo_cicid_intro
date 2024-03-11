@@ -1,4 +1,4 @@
-name: sss
+name: Substring Example
 
 on:
   push:
@@ -8,13 +8,10 @@ on:
 jobs:
   substring:
     runs-on: ubuntu-latest
+    outputs:
+      substring: ${{ steps.extract.outputs.s1 }}
     steps:
       - name: Extract Substring
         id: extract
-        run: |
-          my_string="Hello World"
-          my_substring="${my_string:6:5}" # Extracts substring starting from index 6 with a length of 5
-          echo "::set-output name=substring::$my_substring"
-          
-      - name: Print Substring
-        run: echo "Extracted Substring: ${{ steps.extract.outputs.substring }}"
+        run: echo "::set-output name=s1::hello"
+
