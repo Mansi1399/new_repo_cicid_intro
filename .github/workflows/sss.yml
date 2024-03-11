@@ -13,7 +13,9 @@ jobs:
       - name: Extract Substring
         id: extract
         shell: bash
-        run: cut --version
+        run: |
+         name="John Doe"
+         echo ${name} | cut -d ' ' -f 1
 
       # - name: use
       #   run: echo "${{env.s1}}"
