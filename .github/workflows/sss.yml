@@ -9,8 +9,6 @@ on:
 jobs:
   substring:
     runs-on: ubuntu-latest
-    outputs:
-      substring: ${{ steps.extract.outputs.s1 }}
     steps:
       - name: Extract Substring
         id: extract
