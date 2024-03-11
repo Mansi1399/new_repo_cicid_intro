@@ -13,7 +13,7 @@ jobs:
       - name: Extract Substring
         id: extract
         shell: bash
-        run: $(echo 'h-1' | cut -d '-' -f 2)
+        run: cut --version
 
       # - name: use
       #   run: echo "${{env.s1}}"
