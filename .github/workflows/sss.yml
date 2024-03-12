@@ -19,7 +19,7 @@ jobs:
          run:  |
           substring_before=$(echo ${{env.s11}} | cut -d'-' -f1)
           echo "s1=${{env.s11}} | cut -d '-' -f 1" >> $GITHUB_ENV
-          echo "${{substring_before}}"
+          echo substring_before
      
          
 
