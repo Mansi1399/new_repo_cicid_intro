@@ -14,9 +14,9 @@ jobs:
          id: extract
          shell: bash
          run: |
-           echo "s11=hj" >> $GITHUB_ENV
+           echo "s11=h-j" >> $GITHUB_ENV
        - name: Extract Substring1
-         run:  echo "s1=${{env.s11}} | cut -d ' ' -f 1" >> $GITHUB_ENV
+         run:  echo "s1=${{env.s11}} | cut -d '-' -f 1" >> $GITHUB_ENV
      
          
 
