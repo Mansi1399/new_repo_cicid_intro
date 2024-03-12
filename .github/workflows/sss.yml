@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Extract Substring
         id: extract
-        run: echo "s1=${{hello-i | cut -d ' ' -f 1}}" >> $GITHUB_ENV
+        run: echo "s1=${{"hello-i" | cut -d ' ' -f 1}}" >> $GITHUB_ENV
       # - name: Extract Substring
       #   id: extract
       #   shell: bash
