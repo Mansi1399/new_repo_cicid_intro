@@ -15,8 +15,8 @@ jobs:
         shell: bash
         run: |
          name="John Doe"
-         b= ${name} | cut -d ' ' -f 1
-         echo b
+         echo ${name} | cut -d ' ' -f 1
+         
 
       # - name: use
       #   run: echo "${{env.s1}}"
