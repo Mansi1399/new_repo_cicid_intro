@@ -12,10 +12,13 @@ jobs:
     steps:
       - name: Extract Substring
         id: extract
-        shell: bash
-        run: |
-         name="John Doe"
-         echo ${name} | cut -d ' ' -f 1
+        run: echo "s1=hello-i" >> $GITHUB_ENV
+      # - name: Extract Substring
+      #   id: extract
+      #   shell: bash
+      #   run: |
+      #    name="John Doe"
+      #    echo ${name} | cut -d ' ' -f 1
          
 
       # - name: use
